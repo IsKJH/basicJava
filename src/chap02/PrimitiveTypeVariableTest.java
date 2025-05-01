@@ -1,60 +1,42 @@
 package chap02;
 
-//기본형변수의 리터럴 확인
+//기본형과 참조형 변수의 비교
 public class PrimitiveTypeVariableTest {
 
 	public static void main(String[] args) {
-		// 사용자가 입력하는 값을 리터럴이라 한다.
-		// 정수형
-		// 정수형리터럴은 기본타입이 int
-		// int i = 10;
-		//    --- ---
-		//    변수 리터럴
-		// byte b = 128; => byte로 표현할 수 있는 범위가 벗어남
-		byte b = 127;
-		short s = 32767;
-		int i = 2147483647;
-		long l = 2147483648L; //int범위를 벗어나면 long으로 정의해야 한다.
-		                      //L이나 l을 추가해서 long형의 리터럴로 변경
-		System.out.println(b);
-		System.out.println(s);
-		System.out.println(i);
-		System.out.println(l);
-		// [실수형]
-		// 실수형 리터럴의 기본타입은 double
-		float f = 10.5f;//float형 리터럴은 f나 F를 추가해서 변경
-		double d = 10.5;
-		int data = 10;
-		// int와 int의 연산은 결과도 int
-		// double형의 변수에 할당되므로 double유형으로 리터럴이 변경
-		double result = data/3;
-		System.out.println(result);
-		// 연산에 포함된 값이 double로 변경되면 모든 연산은 double연산이 된다.
-		System.out.println((double)35/100);
-		
-		// [문자형]
-		// char는 문자를 저장하기 위한 데이터타입
-		// 리터럴은 작은따옴표로 표현
-		char c = 'a';
-		char c2 = '한';
-		System.out.println(c);
-		
-		// char의 타입을 int형으로 변환이 가능
-		int chardata = 'a';
-		//int = char;
-		System.out.println(chardata);
-		// 변수 c에 담긴 'a'는 char타입이지만 c변수를 int형으로 강제 형변환
-		System.out.println((int)c);
-		System.out.println((int)'z');
-		System.out.println((int)'A');
-		System.out.println((int)'Z');
-		
-		// [boolean]
-		// 예/아니오, on/off
-		// boolean리터럴은 true/false
-		boolean bool = false;
-		System.out.println(bool);
-		
+		// 기본형 변수는 값을 저장하고 참조형 변수는 주소를 저장하기 때문에 비교하는 경우 같은 객체라고 해도 다를 수 있다.
+		int i = 10;
+		int j = 10;
+		System.out.println("*****기본형*****");
+		if (i == j) {
+			System.out.println("기본형같다.");
+		} else {
+			System.out.println("기본형다르다.");
+		}
+
+		String str1 = new String("java");
+		String str2 = new String("java");
+		System.out.println("*****참조형*****");
+		if (str1 == str2) {
+			System.out.println("참조형같다.");
+		} else {
+			System.out.println("참조형다르다.");
+		}
+
+		System.out.println("*****문자열비교*****");
+		if (str1.equals(str2)) {
+			System.out.println("문자열같다.");
+		} else {
+			System.out.println("문자열다르다.");
+		}
+
+		System.out.println("*****참조변경*****");
+		str1 = str2;
+		if (str1 == str2) {
+			System.out.println("참조형같다.");
+		} else {
+			System.out.println("참조형다르다.");
+		}
 	}
 
 }
