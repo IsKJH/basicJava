@@ -15,9 +15,13 @@ public class Array2DTest1 {
 		System.out.println(myarr[2][0]);
 		myarr[0][0] = 100;
 		myarr[1][1] = 200;
+		System.out.println(myarr.length);
+		System.out.println(myarr[0].length);
+		System.out.println(myarr[1].length);
+		System.out.println(myarr[2].length);
 
-		for (int row = 0; row < 3; row++) {
-			for (int i = 0; i < 2; i++) {
+		for (int row = 0; row < myarr.length; row++) {
+			for (int i = 0; i < myarr[row].length; i++) {
 				System.out.print(myarr[row][i] + "\t");
 			}
 			System.err.println();
