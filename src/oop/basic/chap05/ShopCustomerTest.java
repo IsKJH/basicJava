@@ -1,7 +1,5 @@
 package oop.basic.chap05;
 
-import java.text.SimpleDateFormat;
-
 public class ShopCustomerTest {
 
 	public static void main(String[] args) {
