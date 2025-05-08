@@ -13,7 +13,7 @@ public class OprTest2 {
 		System.out.println("num1!=num3 : " + (num1 != num3));
 
 		// 참조형변수에 초기값을 줄때 사용
-		String str = null;
+		String str = "";
 		// &&연산과 & 연슨은 동일하나
 		// &&연산은 앞의 항이 false이면 뒤의 항은 검사하지 않는다.
 		System.out.println(num1 < 100 && (str.length() > 10));

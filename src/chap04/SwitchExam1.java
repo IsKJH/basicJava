@@ -22,6 +22,7 @@ public class SwitchExam1 {
 			System.out.println("기타");
 			break;
 		}
+		key.close();
 	}
 
 }

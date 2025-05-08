@@ -17,7 +17,7 @@ public class MultiIfTest {
 		} else {
 			System.out.println("0");
 		}
-
+		key.close();
 	}
 
 }

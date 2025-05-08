@@ -32,7 +32,7 @@ public class FareTest {
 		System.out.println("사용자코드:1");
 		System.out.println("사용요금:" + useFee);
 		System.out.println("총수도 요금:" + (int) (useFee + (useFee * 0.05)));
-
+		sc.close();
 	}
 
 }

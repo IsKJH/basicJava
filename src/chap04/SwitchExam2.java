@@ -34,6 +34,7 @@ public class SwitchExam2 {
 		} else {
 			System.out.println("잘못입력");
 		}
+		key.close();
 	}
 
 }

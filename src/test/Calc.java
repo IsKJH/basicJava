@@ -28,6 +28,7 @@ public class Calc {
 			System.out.println("잘못선택했습니다.");
 			Calc();
 		}
+		sc.close();
 	}
 
 }

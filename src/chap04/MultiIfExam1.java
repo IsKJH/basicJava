@@ -18,6 +18,7 @@ public class MultiIfExam1 {
 			System.out.println("주민번호입력:" + num);
 			System.out.println("기타");
 		}
+		key.close();
 	}
 
 }

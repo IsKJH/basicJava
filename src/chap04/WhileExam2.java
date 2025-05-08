@@ -13,6 +13,7 @@ public class WhileExam2 {
 			System.out.println(dan + "*" + i + "=" + dan * i);
 			i++;
 		}
+		sc.close();
 	}
 
 }

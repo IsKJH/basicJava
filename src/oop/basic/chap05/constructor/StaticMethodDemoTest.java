@@ -1,0 +1,14 @@
+package oop.basic.chap05.constructor;
+
+public class StaticMethodDemoTest {
+
+	public static void main(String[] args) {
+		StaticMethodDemo obj = new StaticMethodDemo();
+		StaticMethodDemo.print();
+		obj.change();
+		// API에서 제공하는 클래스의 static멤버들을 접근하는 방법
+		System.out.println("PI값 : " + Math.PI);
+		System.out.println("랜덤값 : " + Math.random());
+	}
+
+}
