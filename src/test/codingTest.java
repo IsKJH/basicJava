@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Iterator;
-
 public class codingTest {
 
 	public static void main(String[] args) {

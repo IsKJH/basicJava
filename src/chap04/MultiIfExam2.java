@@ -27,5 +27,6 @@ public class MultiIfExam2 {
 				System.out.println("평가:A");
 			}
 		}
+		scanner.close();
 	}
 }

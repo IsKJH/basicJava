@@ -1,6 +1,5 @@
 package chap04;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Ifexam02 {
@@ -17,5 +16,6 @@ public class Ifexam02 {
 				System.out.println("입력한 숫자는 5의 배수가 아닙니다.");
 			}
 		}
+		key.close();
 	}
 }

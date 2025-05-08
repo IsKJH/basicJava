@@ -11,5 +11,6 @@ public class ForExam_GuGu {
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(dan + " * " + i + " = " + (dan * i));
 		}
+		key.close();
 	}
 }

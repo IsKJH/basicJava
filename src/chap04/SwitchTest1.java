@@ -27,5 +27,6 @@ public class SwitchTest1 {
 		default:
 			System.out.println("기타");
 		}
+		key.close();
 	}
 }

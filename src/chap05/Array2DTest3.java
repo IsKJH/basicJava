@@ -1,7 +1,5 @@
 package chap05;
 
-import java.util.Iterator;
-
 public class Array2DTest3 {
 
 	public static void main(String[] args) {

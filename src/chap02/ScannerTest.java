@@ -23,6 +23,7 @@ public class ScannerTest {
 		System.out.println("숫자입력:");
 		int intVal = key.nextInt();
 		System.out.println("사용자가 입력한 숫자값:" + intVal);
+		key.close();
 	}
 
 }

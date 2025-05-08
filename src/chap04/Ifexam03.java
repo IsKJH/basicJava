@@ -17,6 +17,7 @@ public class Ifexam03 {
 		} else {
 			System.out.println("음수입니다.");
 		}
+		key.close();
 	}
 
 }
