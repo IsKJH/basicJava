@@ -7,8 +7,7 @@ public class Teacher extends Person {
 	}
 
 	public Teacher(String name, int age, String subject) {
-		this.name = name;
-		this.age = age;
+		super(name, age);
 		this.subject = subject;
 	}
 
@@ -21,6 +20,7 @@ public class Teacher extends Person {
 	}
 
 	public void display() {
-		System.out.println("이 름 : " + this.getName() + " 나 이 : " + this.getAge() + " 담당과목 : " + this.getSubject());
+		super.display();
+		System.out.println("\t담당과목 : " + subject);
 	}
 }

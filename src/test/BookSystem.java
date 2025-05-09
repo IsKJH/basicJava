@@ -1,3 +1,5 @@
+package test;
+
 public class BookSystem {
 	public static void main(String[] args) {
 		Book[] booklist = new Book[5];
@@ -13,7 +15,7 @@ public class BookSystem {
 		booklist[2] = book3;
 		booklist[3] = book4;
 		booklist[4] = book5;
-		
+
 		BookMgr mgr = new BookMgr(booklist);
 		System.out.println("=== 책 목록 ===");
 		mgr.printBooklist();
