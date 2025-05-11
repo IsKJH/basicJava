@@ -7,8 +7,7 @@ public class Staff extends Person {
 	}
 
 	public Staff(String name, int age, String job) {
-		this.name = name;
-		this.age = age;
+		super(name, age);
 		this.job = job;
 	}
 
@@ -21,6 +20,7 @@ public class Staff extends Person {
 	}
 
 	public void display() {
-		System.out.println("이 름 : " + this.getName() + " 나 이 : " + this.getAge() + " 부 서 : " + this.getJob());
+		super.display();
+		System.out.println("\t부 서 : " + this.getJob());
 	}
 }
