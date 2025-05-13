@@ -26,7 +26,7 @@ public class SenderTest {
 		}
 		SenderLogic s = new SenderLogic();
 		s.run(sender);
-
+		key.close();
 	}
 
 }
