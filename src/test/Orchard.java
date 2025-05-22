@@ -1,10 +1,22 @@
 package test;
 
+import java.time.LocalTime;
+import java.util.ArrayList;
+
 public class Orchard {
 	private int waterMelon;
 	private int apple;
 	private int peach;
 	private int shineMusket;
+	private ArrayList<String> historyList;
+
+	public void printHistory() {
+		if (historyList == null) {
+			System.out.println("거래내역이 없습니다.");
+		} else {
+			System.out.println(getHistoryList().toString());
+		}
+	}
 
 	public void print() {
 		System.out.println(toString());
@@ -25,14 +37,6 @@ public class Orchard {
 			setShineMusket(getShineMusket() + count);
 			break;
 		}
-	}
-
-	public void buy() {
-
-	}
-
-	public void history(String fruit, int count) {
-
 	}
 
 	public Orchard() {
@@ -77,6 +81,17 @@ public class Orchard {
 
 	public void setShineMusket(int shineMusket) {
 		this.shineMusket = shineMusket;
+	}
+
+	public ArrayList<String> getHistoryList() {
+		return historyList;
+	}
+
+	public void setHistoryList(String fruit, int count) {
+		if (this.historyList == null) {
+			this.historyList = new ArrayList<String>();
+		}
+		this.historyList.add(fruit + " / " + count + "개 (" + LocalTime.now() + ")");
 	}
 
 	@Override
