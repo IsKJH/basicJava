@@ -11,6 +11,7 @@ public class StringTest3 {
 		System.out.println("str1.indexOf('a')=>" + str1.indexOf('a'));
 		System.out.println("str1.indexOf(\"a\")=>" + str1.indexOf("a"));
 		System.out.println("str1.indexOf(\"자\")=>" + str1.indexOf("자"));
+		System.out.println("str1.indexOf(\"av\")=>" + str1.indexOf("av", 5));
 		System.out.println("str1.lastIndexOf('a')=>" + str1.lastIndexOf('a'));
 		System.out.println("str1.lastIndexOf(\"a\")=>" + str1.lastIndexOf("a"));
 		System.out.println("str1.length()=>" + str1.length());
